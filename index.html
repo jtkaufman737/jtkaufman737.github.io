@@ -19,9 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Patrick+Hand+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
-
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 	<![endif]-->
@@ -59,29 +57,29 @@
 					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
 				-->
 				<ul id="nav" class="full" style="font-size:28px;">
-					<li>
+					<li style="display:flex; justify-content:space-around;">
 						<a href="index.html">
-							<span class="count hide-on-mobile">01.</span>
+							<span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">01.</span>
 							Home
 						</a>
 					</li>
-					<li>
+					<li style="display:flex; justify-content:space-around;">
 						<a href="about.html">
-							<span class="count hide-on-mobile">02.</span>
+							<span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">02.</span>
 							About
 						</a>
 
 					</li>
 
-					<li>
+					<li style="display:flex; justify-content:space-around;">
 						<a href="work.html">
-							<span class="count hide-on-mobile">03.</span>Work
+							<span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">03.</span>Work
 						</a>
 					</li>
 
-					<li>
+					<li style="display:flex; justify-content:space-around;">
 						<a href="contact.html">
-							<span class="count hide-on-mobile">04.</span>
+							<span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">04.</span>
 							Contact
 						</a>
 					</li>
@@ -126,7 +124,8 @@
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
-				<a href="work.html" class="permalink">
+				<!--start -->
+				<a href="#" class="myalert" onclick="runInterference();">
 					<div class="desktop-6 mobile-half columns">
 						<div class="item">
 							<h2>Former Portfolio Site</h2>
@@ -136,6 +135,7 @@
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
+				<!--end -->
 				<div class="clearfix"></div>
 				<br/>
 				<a href="https://ladydevblog.wordpress.com/" class="permalink">
@@ -222,26 +222,16 @@
 		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
 		Use jQuery 1.8 until Flexslider 2.2 stable version is released
 	-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-	<script src="js/jQuery.BlackAndWhite.min.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/less-1.4.0.min.js"></script>
 	<script src="js/jquery.typeMenu.js"></script>
 	<script src="js/jquery.typeSticky.js"></script>
-
-
-
-
-
-
-
-
-
-
-	<script src="js/jquery.custom.js"></script>
-
-
-<!-- End Document
-================================================== -->
+<script src="js/jquery.custom.js"></script>
+<script>
+ var runInterference = function(){
+		 alert("Unfortunately, this is the only project that is no longer live. Because I only have one domain name, I had to take it down to bulid this site :) ");
+		 console.log('Checking this out');
+ }
+</script>
 </body>
 </html>
