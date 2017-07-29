@@ -543,3 +543,8 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+  .textLeft{
+    text-align:left !important;
+    padding-left:10px;
+  }
