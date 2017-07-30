@@ -1,57 +1,76 @@
+
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <link rel="stylesheet" type="text/css" href="work_style.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <link rel="stylesheet" type="text/css" href="css/typegrid.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Patrick+Hand+SC" rel="stylesheet">
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>JTK | Home</title>
+	<meta name="description" content=".">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
+	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Patrick+Hand+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<title>JTK | Work</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 </head>
-<body>
-  <div class="topbar">
-    <div class="container" id="nav">
+<body onload="runWarning()" class="home">
+	<!-- Header - Half Logo
+	================================================== -->
+	<section id="header">
+		<div class="topbar">
+			<div class="container">
 
-      <!--
-        A custom jQuery plugin called typeMenu handles the menu
-        Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
-      -->
-      <ul id="nav" class="full" style="font-size:28px;">
-        <li style="display:flex; justify-content:space-around;">
-          <a href="index.html">
-            <span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">01.</span>
-            Home
-          </a>
-        </li>
-        <li style="display:flex; justify-content:space-around;">
-          <a href="about.html">
-            <span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">02.</span>
-            About
-          </a>
+				<!--
+					A custom jQuery plugin called typeMenu handles the menu
+					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
+				-->
+				<ul id="nav" class="full" style="font-size:28px;">
+					<li style="display:flex; justify-content:space-around;">
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<li style="display:flex; justify-content:space-around;">
+						<a href="about.html">
+					 About
+						</a>
 
-        </li>
+					</li>
 
-        <li style="display:flex; justify-content:space-around;">
-          <a href="work.html">
-            <span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">03.</span>Work
-          </a>
-        </li>
+					<li style="display:flex; justify-content:space-around;">
+						<a href="work.html">
+Work
+						</a>
+					</li>
 
-        <li style="display:flex; justify-content:space-around;">
-          <a href="contact.html">
-            <span class="count hide-on-mobile" style="font-size:15px; margin-bottom:2px;">04.</span>
-            Contact
-          </a>
-        </li>
+					<li style="display:flex; justify-content:space-around;">
+						<a href="contact.html">
+						Contact
+						</a>
+					</li>
 
-      </ul><!-- // #n! // #nav -->
+				</ul><!-- // #nav -->
 
-    </div><!-- // .container -->
-  </div><!-- // .topbar -->
-    </div><!-- // .container -->
-  </div><!-- // .topbar -->
+			</div><!-- // .container -->
+		</div><!-- // .topbar -->
+
   <br/><br/><br/>
   <section class="demo">
   <button class="next">Next</button>
@@ -63,7 +82,7 @@
         <h6>Ruby/Rails, Postgres, HTML, CSS</h6></center>
         <p class="textLeft">This project is a message board site created with a postgreSQL database using Ruby on Rails. The idea for the app originated with my dad,
         who passed away this year unexpectedly. I wanted a place for me and my siblings to be able to post memories and celebrate all of the good
-        times we had with my father. His name, 'Dan', also served as inspiration for the name of the site. Feel free to play around with my app more <a href="https://danipedia.herokuapp.com/posts"><i><b>here.</b></i></a></p>
+        times we had with my father. His name, 'Dan', also served as inspiration for the name of the site. Feel free to play around with my app more <br/><a href="https://danipedia.herokuapp.com/posts"><i><b>here.</b></i></a></p>
         <img src="images/danipedia_2.png" class="work_pics"/><br/>
         <br/><br/><br/><br/>
      </div>
@@ -73,7 +92,7 @@
          <h6>Ruby/Rails, Postgres, HTML, CSS</h6></center>
          <p class="textLeft">This project is a message board site created with a postgreSQL database using Ruby on Rails. The idea for the app originated with my dad,
          who passed away this year unexpectedly. I wanted a place for me and my siblings to be able to post memories and celebrate all of the good
-         times we had with my father. His name, 'Dan', also served as inspiration for the name of the site. Feel free to play around with my app more <a href="https://danipedia.herokuapp.com/posts"><i><b>here.</b></i></a></p>
+         times we had with my father. His name, 'Dan', also served as inspiration for the name of the site. Feel free to play around with my app more <br/><a href="https://danipedia.herokuapp.com/posts"><i><b>here.</b></i></a></p>
          <center><img src="images/danipedia_3.png" class="work_pics"/><br/>
          <br/><br/><br/><br/>
       </div>
@@ -83,7 +102,7 @@
           <h6>Ruby/Rails, Postgres, HTML, CSS</h6></center>
           <p class="textLeft">This project is a message board site created with a postgreSQL database using Ruby on Rails. The idea for the app originated with my dad,
           who passed away this year unexpectedly. I wanted a place for me and my siblings to be able to post memories and celebrate all of the good
-          times we had with my father. His name, 'Dan', also served as inspiration for the name of the site. Feel free to play around with my app more <a href="https://danipedia.herokuapp.com/posts"><i><b>here.</b></i></a></p>
+          times we had with my father. His name, 'Dan', also served as inspiration for the name of the site. Feel free to play around with my app more <br/><a href="https://danipedia.herokuapp.com/posts"><i><b>here.</b></i></a></p>
           <img src="images/danipedia_4.png" class="work_pics"/><br/>
           <br/><br/><br/><br/>
        </div>
@@ -92,7 +111,7 @@
       <center><h5>Memory Game</h5>
         <h6>HTML, CSS, JavaScript</h6></center>
         <p class="textLeft">A simple classic! This is a basic memory game where you flip tiles over, trying
-        to find a matching pair. If you don't get a match, your cards reset.You can take a look at this more, or play for yourself <a href="http://www.joytaylorkaufman.com/memory_game"><i><b>here</b></i></a></p>
+        to find a matching pair. If you don't get a match, your cards reset.You can take a look at this more, or play for yourself <br/><a href="http://www.joytaylorkaufman.com/memory_game"><i><b>here</b></i></a></p>
         <img src="images/memory_game1.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
       </div>
@@ -101,7 +120,7 @@
        <center><h5>Memory Game</h5>
          <h6>HTML, CSS, JavaScript</h6></center>
          <p class="textLeft">A simple classic! This is a basic memory game where you flip tiles over, trying
-         to find a matching pair. If you don't get a match, your cards reset.You can take a look at this more, or play for yourself <a href="http://www.joytaylorkaufman.com/memory_game"><i><b>here</b></i></a></p>
+         to find a matching pair. If you don't get a match, your cards reset.You can take a look at this more, or play for yourself <br/><a href="http://www.joytaylorkaufman.com/memory_game"><i><b>here</b></i></a></p>
          <img src="images/memory_game1b.png" class="work_pics"/><br/><br/>
          <br/><br/><br/><br/>
        </div>
@@ -110,7 +129,7 @@
         <center><h5>Memory Game</h5>
           <h6>HTML, CSS, JavaScript</h6></center>
           <p class="textLeft">A simple classic! This is a basic memory game where you flip tiles over, trying
-          to find a matching pair. If you don't get a match, your cards reset.You can take a look at this more, or play for yourself <a href="http://www.joytaylorkaufman.com/memory_game"><i><b>here</b></i></a></p>
+          to find a matching pair. If you don't get a match, your cards reset.You can take a look at this more, or play for yourself <br/><a href="http://www.joytaylorkaufman.com/memory_game"><i><b>here</b></i></a></p>
           <img src="images/memory_game2.png" class="work_pics"/><br/><br/>
           <br/><br/><br/><br/>
         </div>
@@ -118,9 +137,9 @@
       <div style="display: inline-block;">
       <center><h5>Stevens Academy</h5>
         <h6>HTML & CSS</h6></center>
-        <p class="textLeft">This was a site I redesigned for a local Raleigh school. Their original site, which you can see <a href="http://www.stevensprepacademy.com/"><i>here</i></a>
+        <p class="textLeft">This was a site I redesigned for a local Raleigh school.
         was dark, somewhat cluttered, and very outdated. My goal was to develop a clean, navigable site that was bright and inviting.As a kid I always thought I would grow up to be an artist, and when I get to spend time really diving in deep with the design aspects of a site
-        I feel like I am living out that childhood goal in a way. You can play with that site more <a href="http://www.joytaylorkaufman.com/stevens_academy"><i><b>here</i></b></a></p>
+        I feel like I am living out that childhood goal in a way. You can play with that site more <br/><a href="http://www.joytaylorkaufman.com/stevens_academy"><i><b>here</i></b></a></p>
         <img src="images/stevens_1.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
       </div>
@@ -128,9 +147,9 @@
       <div style="display: inline-block;">
       <center><h5>Stevens Academy</h5>
         <h6>HTML & CSS</h6></center>
-        <p class="textLeft">This was a site I redesigned for a local Raleigh school. Their original site, which you can see <a href="http://www.stevensprepacademy.com/"><i>here</i></a>
+        <p class="textLeft">This was a site I redesigned for a local Raleigh school.
         was dark, somewhat cluttered, and very outdated. My goal was to develop a clean, navigable site that was bright and inviting.As a kid I always thought I would grow up to be an artist, and when I get to spend time really diving in deep with the design aspects of a site
-        I feel like I am living out that childhood goal in a way. You can play with that site more <a href="http://www.joytaylorkaufman.com/stevens_academy"><i><b>here</b></i></a></p>
+        I feel like I am living out that childhood goal in a way. You can play with that site more <br/><a href="http://www.joytaylorkaufman.com/stevens_academy"><i><b>here</b></i></a></p>
         <img src="images/stevens_2.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
       </div>
@@ -138,9 +157,9 @@
       <div style="display: inline-block;">
       <center><h5>Stevens Academy</h5>
         <h6>HTML & CSS</h6></center>
-        <p class="textLeft">This was a site I redesigned for a local Raleigh school. Their original site, which you can see <a href="http://www.stevensprepacademy.com/">here</a>
+        <p class="textLeft">This was a site I redesigned for a local Raleigh school.
         was dark, somewhat cluttered, and very outdated. My goal was to develop a clean, navigable site that was bright and inviting.As a kid I always thought I would grow up to be an artist, and when I get to spend time really diving in deep with the design aspects of a site
-        I feel like I am living out that childhood goal in a way. You can play with that site more <a href="http://www.joytaylorkaufman.com/stevens_academy"><i><b>here</i></b></a></p>
+        I feel like I am living out that childhood goal in a way. You can play with that site more <br/><a href="http://www.joytaylorkaufman.com/stevens_academy"><i><b>here</i></b></a></p>
         <img src="images/stevens_3.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
       </div>
@@ -151,7 +170,7 @@
         <h6>HTML, CSS, JavaScript</h6></center>
         <p class="textLeft">A simple classic! Tic tac toe made using an array of arrays for the JavaScript game logic. This was originally a class project that I ended up
         revisiting to keep my JS knowledge from getting rusty! When I first tried making this app my knowledge of JavaScript was so rudimentary! It was a
-        lot of fun coming back to it with a bit more experience. You can take a look at this more, or play for yourself <a href="http://www.joytaylorkaufman.com/GREEN_BEAN"><i><b>here</i></b></a></p>
+        lot of fun coming back to it with a bit more experience. You can take a look at this more, or play for yourself <br/><a href="http://www.joytaylorkaufman.com/GREEN_BEAN"><i><b>here</i></b></a></p>
         <img src="images/tic_tac_toe2.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
       </div>
@@ -163,7 +182,7 @@
           <h6>HTML, CSS, JavaScript</h6></center>
           <p class="textLeft">A simple classic! Tic tac toe made using an array of arrays for the JavaScript game logic. This was originally a class project that I ended up
           revisiting to keep my JS knowledge from getting rusty! When I first tried making this app my knowledge of JavaScript was so rudimentary! It was a
-          lot of fun coming back to it with a bit more experience. You can take a look at this more, or play for yourself <a href="http://www.joytaylorkaufman.com/GREEN_BEAN"><i><b>here</b></i></a></p>
+          lot of fun coming back to it with a bit more experience. You can take a look at this more, or play for yourself <br/><a href="http://www.joytaylorkaufman.com/GREEN_BEAN"><i><b>here</b></i></a></p>
           <center><img src="images/ttt_1.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
         </div>
@@ -174,7 +193,7 @@
         <h6>HTML, CSS, JavaScript</h6></center>
         <p class="textLeft">A simple classic! Tic tac toe made using an array of arrays for the JavaScript game logic. This was originally a class project that I ended up
         revisiting to keep my JS knowledge from getting rusty! When I first tried making this app my knowledge of JavaScript was so rudimentary! It was a
-        lot of fun coming back to it with a bit more experience.You can take a look at this more, or play for yourself <a href="http://www.joytaylorkaufman.com/GREEN_BEAN"><i><b>here</i></b></a></p>
+        lot of fun coming back to it with a bit more experience.You can take a look at this more, or play for yourself <br/><a href="http://www.joytaylorkaufman.com/GREEN_BEAN"><i><b>here</i></b></a></p>
         <img src="images/ttt_3.png" class="work_pics"/><br/><br/>
         <br/><br/><br/><br/>
         </div>
@@ -185,7 +204,7 @@
         <h6>HTML, CSS, Wordpress, PHP, MySQL</h6></center>
         <p class="textLeft">This is an ongoing project. I'm teaching myself PHP on a MAMP db structure to gut this layout and recreate my own. My PHP skills aren't<td>
         as good as I'd like yet though, so I'm leaning on a theme for the short term. The mission of Lady Dev is going to be providing resources for women
-        in technology, or considering careers in a technical field. You can look at it more <a href="http://ladydevblog.wordpress.com"><i><b>here</i></b></a></p>
+        in technology, or considering careers in a technical field. You can look at it more <br/><a href="http://ladydevblog.wordpress.com"><i><b>here</i></b></a></p>
         <img src="images/ld_3.png" class="work_pics"/><br/><br/>
         </div>
         <!-- 5B -->
@@ -195,7 +214,7 @@
         <h6>HTML, CSS, Wordpress, PHP, MySQL</h6></center>
         <p class="textLeft">This is an ongoing project. I'm teaching myself PHP on a MAMP db structure to gut this layout and recreate my own. My PHP skills aren't
         as good as I'd like yet though, so I'm leaning on a theme for the short term. The mission of Lady Dev is going to be providing resources for women
-        in technology, or considering careers in a technical field. You can look at it more <a href="http://ladydevblog.wordpress.com"><i><b>here</i></b></a></p>
+        in technology, or considering careers in a technical field. You can look at it more <br/><a href="http://ladydevblog.wordpress.com"><i><b>here</i></b></a></p>
         <img src="images/ld_2.png" class="work_pics"/><br/><br/>
         </div>
         <!-- 5C -->
@@ -205,7 +224,7 @@
         <h6>HTML, CSS, Wordpress, PHP, MySQL</h6></center>
         <p class="textLeft">This is an ongoing project. I'm teaching myself PHP on a MAMP db structure to gut this layout and recreate my own. My PHP skills aren't
         as good as I'd like yet though, so I'm leaning on a theme for the short term. The mission of Lady Dev is going to be providing resources for women
-        in technology, or considering careers in a technical field. You can look at it more <a href="http://ladydevblog.wordpress.com"><i><b>here</i></b></a></p>
+        in technology, or considering careers in a technical field. You can look at it more <br/><a href="http://ladydevblog.wordpress.com"><i><b>here</i></b></a></p>
         <img src="images/l_d_3.png" class="work_pics"/><br/><br/>
         </div>
         <!-- Sixth Element Block -->
@@ -215,7 +234,7 @@
         <h6>HTML, CSS, Ruby, Rails, postgreSQL</h6></center>
         <p class="textLeft">This is an app I made for myself because I have a bad habit of being a little scatterbrained. There is a whole science to memory that
           I'll cite in my defense, which basically says that transactional and non-interesting information gets deleted, sort of like the way RAM
-          gets used on a computer. If viewed through that lens, I just have very effective RAM. Anyway, check out the project<a href="http://listamania.herokuapp.com"><i><b>here</i></b></a></p>
+          gets used on a computer. If viewed through that lens, I just have very effective RAM. Anyway, check out the project<br/><a href="http://listamania.herokuapp.com"><i><b>here</i></b></a></p>
         <img src="images/listamania_1.png" class="work_pics"/><br/><br/>
         </div>
         <!-- 6B -->
@@ -225,7 +244,7 @@
         <h6>HTML, CSS, Ruby, Rails, postgreSQL</h6></center>
         <p class="textLeft">This is an app I made for myself because I have a bad habit of being a little scatterbrained. There is a whole science to memory that
           I'll cite in my defense, which basically says that transactional and non-interesting information gets deleted, sort of like the way RAM
-          gets used on a computer. If viewed through that lens, I just have very effective RAM. Anyway, check out the project<a href="http://listamania.herokuapp.com"><i><b>here</i></b></a></p>
+          gets used on a computer. If viewed through that lens, I just have very effective RAM. Anyway, check out the project<br/><a href="http://listamania.herokuapp.com"><i><b>here</i></b></a></p>
         <img src="images/listamania_4.png" class="work_pics"/><br/><br/>
         </div>
         <!-- 6C -->
@@ -235,7 +254,7 @@
         <h6>HTML, CSS, Ruby, Rails, postgreSQL</h6></center>
         <p class="textLeft">This is an app I made for myself because I have a bad habit of being a little scatterbrained. There is a whole science to memory that
           I'll cite in my defense, which basically says that transactional and non-interesting information gets deleted, sort of like the way RAM
-          gets used on a computer. If viewed through that lens, I just have very effective RAM. Anyway, check out the project <a href="http://listamania.herokuapp.com"><i><b>here</i></b></a></p>
+          gets used on a computer. If viewed through that lens, I just have very effective RAM. Anyway, check out the project <br/><a href="http://listamania.herokuapp.com"><i><b>here</i></b></a></p>
         <img src="images/listamania_6.png" class="work_pics"/><br/><br/>
         </div>
         <!-- Seventh element block -->
@@ -272,7 +291,7 @@
          <h5>direczen</h5>
          <h6>HTML | CSS | Iconfinder image inspiration</h6></center>
          <p class="textLeft">It might sound a little tame to go back to making static sites, but I was inspired by these really cute icons I found and was in the mood to do something artsy.
-           if you look for it, there's a hidden 'Always Sunny in Philadelphia' reference. You can play with that <a href="http://jtkaufman737.github.io/direczen" style="font-size:18px; margin-left:1px;"><i><b>here</i></b></a></p>
+           if you look for it, there's a hidden 'Always Sunny in Philadelphia' reference. You can play with that <br/><a href="http://jtkaufman737.github.io/direczen"><i><b>here</i></b></a></p>
          <img src="images/direczen_home.png" class="work_pics"/><br/><br/>
         </div>
         <!-- 8B -->
@@ -281,7 +300,7 @@
          <h5>direczen</h5>
          <h6>HTML | CSS | Iconfinder image inspiration</h6></center>
          <p class="textLeft">It might sound a little tame to go back to making static sites, but I was inspired by these really cute icons I found and was in the mood to do something artsy.
-           if you look for it, there's a hidden 'Always Sunny in Philadelphia' reference. You can play with that <a href="http://jtkaufman737.github.io/direczen" style="font-size:18px; margin-left:1px;"><i><b>here</i></b></a></p> <img src="images/direczen_feature.png" class="work_pics"/><br/><br/>
+           if you look for it, there's a hidden 'Always Sunny in Philadelphia' reference. You can play with that <br/><a href="http://jtkaufman737.github.io/direczen"><i><b>here</i></b></a></p> <img src="images/direczen_feature.png" class="work_pics"/><br/><br/>
         </div>
         <!-- 8C -->
         <div style="display: inline-block;">
@@ -289,7 +308,7 @@
          <h5>direczen</h5>
          <h6>HTML | CSS | Iconfinder image inspiration</h6></center>
          <p class="textLeft">It might sound a little tame to go back to making static sites, but I was inspired by these really cute icons I found and was in the mood to do something artsy.
-                    if you look for it, there's a hidden 'Always Sunny in Philadelphia' reference. You can play with that <a href="http://jtkaufman737.github.io/direczen" style="font-size:18px; margin-left:1px;"><i><b>here</i></b></a></p> <img src="images/feature_2.png" class="work_pics"/><br/><br/>
+                    if you look for it, there's a hidden 'Always Sunny in Philadelphia' reference. You can play with that <br/><a href="http://jtkaufman737.github.io/direczen"><i><b>here</i></b></a></p> <img src="images/feature_2.png" class="work_pics"/><br/><br/>
         </div>
   </div>
 </section>

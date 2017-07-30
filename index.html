@@ -23,32 +23,17 @@
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 	<![endif]-->
-
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-
-	<!-- Favicons
-	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
 </head>
-
-<body>
-
-
+<body onload="runWarning()" class="home">
 	<!-- Header - Half Logo
 	================================================== -->
 	<section id="header">
-
-		<!-- * * * * * * * * * * * * * * * * * * * * * * *
-
-			Top Bar & Menu (#nav)
-
-		* * * * * * * * * * * * * * * * * * * * * * * * -->
 		<div class="topbar">
 			<div class="container">
 
@@ -239,6 +224,11 @@ Work
 		 alert("Unfortunately, this is the only project that is no longer live. Because I only have one domain name, I had to take it down to bulid this site :) ");
 		 console.log('Checking this out');
  }
+
+var runWarning = function() {
+	alert("Hey there. (Ewww, dialog box amirite?) Thank you for your patience as I am briefly going through a reponsiveness renaissance. You may notice various odd things as I work through learning the magic of media queries. Please don't judge me, I do not typically leave my websites in such disarray. :")
+}
+
 </script>
 </body>
 </html>
