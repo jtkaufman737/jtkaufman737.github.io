@@ -102,7 +102,7 @@ Work
 							<h2>Stevens Academy</h2>
 							<span class="category">Design | HTML | CSS</span>
 
-							<img class="fixWidth" src="images/stevens_2.png" alt="Stevens Academy" />
+							<img class="fixWidth safari" src="images/stevens_2.png" alt="Stevens Academy" />
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
@@ -113,7 +113,7 @@ Work
 							<h2>Former Portfolio Site</h2>
 							<span class="category">HTML | CSS | jQuery Carosel</span>
 
-							<img class="fixWidth" src="images/old_portfolio1.png" alt="First Portfolio" />
+							<img class="fixWidth safari" src="images/old_portfolio1.png" alt="First Portfolio" />
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
@@ -126,7 +126,7 @@ Work
 							<h2>Lady Dev</h2>
 							<span class="category"> PHP | Wordpress | MySQL</span>
 
-							<img class="fixWidth" src="images/ld_3.png" alt="Lady Dev" />
+							<img class="fixWidth safari" src="images/ld_3.png" alt="Lady Dev" />
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
@@ -137,7 +137,7 @@ Work
 							<h2>Memory Game</h2>
 							<span class="category">HTML | CSS | JavaScript</span>
 
-							<img class="fixWidth" src="images/memory_game1.png" alt="Memory Game" />
+							<img class="fixWidth safari" src="images/memory_game1.png" alt="Memory Game" />
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
@@ -149,7 +149,7 @@ Work
 						 <h2>Listamania</h2>
 						 <span class="category">Ruby | Rails | postgreSQL | HTML | CSS</span>
 
-						 <img class="fixWidth" src="images/listamania_4.png" alt="Listamania" />
+						 <img class="fixWidth safari" src="images/listamania_4.png" alt="Listamania" />
 					 </div><!-- // .item -->
 				 </div><!-- // .desktop-3 -->
 			 </a>
@@ -159,7 +159,7 @@ Work
 						<h2>Danipedia</h2>
 						<span class="category">Ruby | Rails | postgreSQL | HTML | CSS</span>
 
-						<img class="fixWidth" src="images/danipedia_2.png" alt="Danipedia" />
+						<img class="fixWidth safari" src="images/danipedia_2.png" alt="Danipedia" />
 					</div><!-- // .item -->
 				</div><!-- // .desktop-3 -->
 			</a><div class="clearfix"></div>
@@ -169,7 +169,7 @@ Work
 					 <h2>Tic Tac Toe</h2>
 						<span class="category">HTML | CSS | JavaScript</span>
 
-						<img class="fixWidth" src="images/ttt_1.png" alt="Tic Tac Toe" />
+						<img class="fixWidth safari" src="images/ttt_1.png" alt="Tic Tac Toe" />
 					</div><!-- // .item -->
 			</div><!-- // .desktop-3 -->
 		</a>
@@ -181,7 +181,7 @@ Work
 
 					<img class="fixWidth" src="images/direczen_home.png" alt="direczen" />
 				</div><!-- // .item -->
-		</div><!-- // .desktop-3 -->-->
+		</div><!-- // .desktop-3 --> 
 	</a><div class="clearfix"></div>
 		</div><!-- // .container -->
 	</section><!-- // section#works -->
@@ -219,7 +219,7 @@ Work
 	<script src="js/jquery.typeMenu.js"></script>
 	<script src="js/jquery.typeSticky.js"></script>
 <script src="js/jquery.custom.js"></script>
-<script>
+<script type="text/javascript">
  var runInterference = function(){
 		 alert("Unfortunately, this is the only project that is no longer live. Because I only have one domain name, I had to take it down to bulid this site :) ");
 		 console.log('Checking this out');
@@ -229,6 +229,12 @@ var runWarning = function() {
 	alert("Hey there. (Ewww, dialog box amirite?) Thank you for your patience as I am briefly going through a reponsiveness renaissance. You may notice various odd things as I work through learning the magic of media queries. Please don't judge me, I do not typically leave my websites in such disarray. :")
 }
 
+$(function () {
+if (navigator.userAgent.indexOf('Safari') != -1 &&
+    navigator.userAgent.indexOf('Chrome') == -1) {
+        $("body").addClass("safari");
+    }
+});
 </script>
 </body>
 </html>

@@ -103,7 +103,7 @@ img {
  display:flex;
  justify-content:space-between;
  width:85%;
- height:85%;
+/* height:85%;*/
 }
 
 .icon_pics{
@@ -371,4 +371,13 @@ there.
     font-size:100px;
     color:red;
   }
+}
+
+.fixWidth{
+  height:20%;
+}
+
+.safari{
+  max-width:40px !important;
+
 }
