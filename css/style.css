@@ -1447,7 +1447,7 @@ p{
 	width:10%;
 }
 
-@media screen and (max-width:1024px){
+@media screen only and (max-width:1024px; min-width:412px;){
 	#lines_code{
 		display:none;
 	}
@@ -1457,7 +1457,7 @@ p{
 	}
 	p{
 		margin-left:20%;
-	}
+}
 
 	h4{
 		margin-left:20%;
@@ -1473,7 +1473,11 @@ p{
 
 	.desktop-6{
 		width:40%;
-		margin-left:7%;
+		margin-left:5%;
+	}
 
+	.textLeft{
+		line-height:30px;
+		font-size:80px;
 	}
 }
