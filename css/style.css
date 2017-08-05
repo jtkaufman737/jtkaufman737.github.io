@@ -1446,3 +1446,34 @@ p{
 	height:4%;
 	width:10%;
 }
+
+@media screen and (max-width:1024px){
+	#lines_code{
+		display:none;
+	}
+
+	body{
+		width:100%;
+	}
+	p{
+		margin-left:20%;
+	}
+
+	h4{
+		margin-left:20%;
+	}
+
+	#about .services p{
+		width:126%;
+	}
+
+	img{
+		width:90%;
+	}
+
+	.desktop-6{
+		width:40%;
+		margin-left:7%;
+
+	}
+}
