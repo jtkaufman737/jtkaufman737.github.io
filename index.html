@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Patrick+Hand+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 	<![endif]-->
@@ -95,7 +95,6 @@ Work
 		<div class="container">
 			<div class="desktop-12 columns"><div class="border-top"></div></div><center>
 				<br/>
-
 				<a href="http://www.joytaylorkaufman.com/stevens_academy/" class="permalink">
 					<div class="desktop-6 mobile-half columns">
 						<div class="item first-row">
@@ -107,13 +106,12 @@ Work
 					</div><!-- // .desktop-3 -->
 				</a>
 				<!--start -->
-				<a href="#" class="myalert" onclick="runInterference();">
+				<a href="#" class="warningImage">
 					<div class="desktop-6 mobile-half columns">
 						<div class="item">
 							<h2>Former Portfolio Site</h2>
 							<span class="category">HTML | CSS | jQuery Carosel</span>
-
-							<img class="fixWidth safari" src="images/old_portfolio1.png" alt="First Portfolio" />
+							<img class="fixWidth safari" src="images/old_portfolio1.png" id="imgSwap" alt="First Portfolio" onclick="runInterference()"/></span>
 						</div><!-- // .item -->
 					</div><!-- // .desktop-3 -->
 				</a>
@@ -181,7 +179,7 @@ Work
 
 					<img class="fixWidth" src="images/direczen_home.png" alt="direczen" />
 				</div><!-- // .item -->
-		</div><!-- // .desktop-3 --> 
+		</div><!-- // .desktop-3 -->
 	</a><div class="clearfix"></div>
 		</div><!-- // .container -->
 	</section><!-- // section#works -->
@@ -219,15 +217,34 @@ Work
 	<script src="js/jquery.typeMenu.js"></script>
 	<script src="js/jquery.typeSticky.js"></script>
 <script src="js/jquery.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.com/libraries/sweetalert"></script>
 <script type="text/javascript">
+  document.onload = function(){
+		sweetAlert("Hello world!");
+}
+//JTK - Return to this when i have time. Like the idea, but not working 
  var runInterference = function(){
+		 swal({
+		 title: "Are you sure?",
+		 text: "You will not be able to recover this imaginary file!",
+		 type: "warning",
+		 showCancelButton: true,
+		 confirmButtonColor: "#DD6B55",
+		 confirmButtonText: "Yes, delete it!",
+		 closeOnConfirm: false,
+		 html: false
+		}, function(){
+		 swal("Deleted!",
+		 "Your imaginary file has been deleted.",
+		 "success");
+		});
+
+
 		 alert("Unfortunately, this is the only project that is no longer live. Because I only have one domain name, I had to take it down to bulid this site :) ");
 		 console.log('Checking this out');
  }
-
-var runWarning = function() {
-	alert("Hey there. (Ewww, dialog box amirite?) Thank you for your patience as I am briefly going through a reponsiveness renaissance. You may notice various odd things as I work through learning the magic of media queries. Please don't judge me, I do not typically leave my websites in such disarray. :")
-}
 
 $(function () {
 if (navigator.userAgent.indexOf('Safari') != -1 &&
