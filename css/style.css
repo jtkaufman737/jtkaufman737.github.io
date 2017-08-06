@@ -1481,3 +1481,8 @@ p{
 		font-size:80px;
 	}
 }
+
+.bottomLink{
+  margin-bottom:0px !important;
+	/* color:red;*/
+}

@@ -301,9 +301,8 @@ there.
 	}
 
     .home a:hover{
-			color:gray;
-			text-transform:uppercase;
-		}
+			color:#19755c;
+}
 
 	 .home #header{
 	    line-height:50px;
