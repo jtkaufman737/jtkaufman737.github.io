@@ -1514,7 +1514,7 @@ p{
 }
 
 @media only screen
-  and (min-device-width: 1024px)
+  and (max device-height: 1366px)
   and (max-device-width: 1366px){
 
 		.desktop-6{
