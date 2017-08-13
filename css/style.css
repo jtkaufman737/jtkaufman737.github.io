@@ -1419,6 +1419,10 @@ p{
 		border-top: 1px solid#206768;
 	}
 
+	.desktop-6.mobile-half.columns{
+		max-width:48%;
+	}
+
 	@media screen and (max-width: 860px) {
 
 		.flex-direction-nav .flex-prev {
@@ -1430,31 +1434,32 @@ p{
 			right: 0;
 		}
 
-	}
+		.flex-block {
+			width:80%;
+			display:flex;
+			justify-content:space-between;
+		}
 
-.flex-block {
-	width:80%;
-	display:flex;
-	justify-content:space-between;
+		.myalert{
+			font-family: 'Poppins', sans-serif;
+			height:4%;
+			width:10%;
+		}
 }
 
-.myalert{
-	font-family: 'Poppins', sans-serif;
-	height:4%;
-	width:10%;
-}
-
-@media screen only and (max-width:1024px; min-width:412px;){
+@media screen only and (max-width:736px; min-width:412px;){
 	#lines_code{
 		display:none;
 	}
 
 	body{
 		width:100%;
+		color:red;
 	}
+
 	p{
 		margin-left:20%;
-}
+  }
 
 	h4{
 		margin-left:20%;
@@ -1469,7 +1474,7 @@ p{
 	}
 
 	.desktop-6{
-		width:40%;
+		max-width:48%;
 		margin-left:5%;
 	}
 
@@ -1477,25 +1482,23 @@ p{
 		line-height:30px;
 		font-size:80px;
 	}
-}
 
 .bottomLink{
   margin-bottom:0px !important;
-	/* color:red;*/
+  }
+
+	#lines_code{
+		margin-right:5%;
+	}
+
+	 #imgSwap{
+		 background-image:url(old_portfolio1);
+	 }
+
+	#imgSwap:hover{
+		background-image:url(images/altPortfolio.png);
+	}
 }
-
-#lines_code{
-	margin-right:5%;
-}
-
- #imgSwap{
-	 background-image:url(old_portfolio1);
- }
-
-#imgSwap:hover{
-	background-image:url(images/altPortfolio.png);
-}
-
 
 @media only screen
   and (min-device-width: 768px)
@@ -1503,23 +1506,45 @@ p{
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
 
+
 	.desktop-6{
 		width:48%;
+		color:red;
 	}
-
-	/*img,h2,span{
-		margin-left:35%;
-	}*/
-
 }
 
 @media only screen
-  and (max device-height: 1366px)
+  and (min-device-width: 1024px)
   and (max-device-width: 1366px){
 
 		.desktop-6{
 			width:48%;
+			color:red;
 		}
 	}
 
-}
+	@media only screen
+	  and (min-device-width: 1366px)
+	  and (max-device-width: 1024px){
+
+			.desktop-6{
+				width:48%;
+				color:red;
+			}
+		}
+
+		@media only screen
+		  and (min-device-width: 768px)
+		  and (max-device-width: 1024px)
+			and (min-device-height: 768px)
+			and (max-device-height: 1024px)
+			{
+
+				.clearfix .desktop-6{
+					max-width:40% !important;
+					color:red;
+				}
+
+			}
+
+ }*/
