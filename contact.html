@@ -3,7 +3,6 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
@@ -28,7 +27,6 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 </head>
-<body onload="runWarning()" class="work">
 	<!-- Header - Half Logo
 	================================================== -->
 	<section id="header">
@@ -51,7 +49,7 @@
 					</li>
 					<li style="display:flex; justify-content:space-around;">
 						<a href="work.html">
-Work
+          Work
 						</a>
 					</li>
 					<li style="display:flex; justify-content:space-around;">
@@ -80,24 +78,40 @@ Work
 		<div class="container">
 			<div class="desktop-6 tablet-12 columns">
 				<h3 class="border-top">Contact</h3>
-				<form name="contactForm" id="contactForm" method="post" action="">
+				<form name="contactForm" id="contactForm" method="post" action="send_form_email.php">
 					<fieldset>
-						<label for="contactName">Name <span class="required">*</span></label>
-						<input name="contactName" type="text" id="contactName" size="30" value="" />
+						<!-- <label for="contactName">Name <span class="required">*</span></label>
+						<input name="contactName" type="text" name="first_name" id="contactName" size="30" value="" />
+						<br />
+						<label for="contactName">Last Name <span class="required">*</span></label>
+						<input name="contactName" type="text" name="last_name" id="contactName" size="30" value="" />
 						<br />
 						<label for="contactEmail">Email <span class="required">*</span></label>
-						<input name="contactEmail" type="text" id="contactEmail" size="30" value="" />
-                        <br />
+						<input name="contactEmail" type="text" name="email" id="contactEmail" size="30" value="" />
+            <br />
 						<label for="contactMessage">Message <span class="required">*</span></label>
-						<textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+						<textarea name="contactMessage" name="comments" id="contactMessage" rows="6" cols="7"></textarea>
                         <br />
 						<label for="contactCaptcha"><strong>10</strong> + <strong>6</strong> = <span class="required">*</span></label>
 						<input name="contactCaptcha" type="text" id="contactCaptcha" size="30" value="" />
 						<input name="contactCaptchaAnswer" type="hidden" id="contactCaptchaAnswer" value="16" />
-						<br/>
-						<label class="placeholder">&nbsp;</label>
-						<input type="submit" class="button full" value="Submit" onclick="runThanksMessage()"/>
+						<br/> -->
+						<form action="mail.php" method="POST">
+						<p>Name</p> <input type="text" name="name">
+						<p>Email</p> <input type="text" name="email">
+						<p>Phone</p> <input type="text" name="phone">
+
+						<p>Request Phone Call:</p>
+						Yes:  <input type="checkbox" value="Yes" name="call"><br />
+						No:  <input type="checkbox" value="No" name="call"><br />
+
+						<p>Website</p> <input type="text" name="website">
+
+						<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+						<input type="submit" value="Send" style="padding:2px; width:50px;">
+						</form>
 					</fieldset>
+
 				</form>
 				<div class="clear"></div>
 			</div><!-- // .desktop-6 -->
