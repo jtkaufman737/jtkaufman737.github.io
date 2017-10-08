@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Patrick+Hand+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+ <link rel="stylesheet" type="text/css" href="nav.scss">
 	<!--[if lt IE 8]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 	<![endif]-->
@@ -41,7 +41,7 @@
 					A custom jQuery plugin called typeMenu handles the menu
 					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
 				-->
-				<ul id="nav" class="full" style="font-size:28px;">
+				<ul id="nav" class="full">
 					<li style="display:flex; justify-content:space-around;">
 						<a href="index.html">
 							Home
@@ -59,15 +59,17 @@
 Work
 						</a>
 					</li>
-<!--
-					<li style="display:flex; justify-content:space-around;">
-						<a href="contact.html">
-						Contact
-						</a>
-					</li> -->
-
 				</ul><!-- // #nav -->
-
+				<ul id="nav" class=".show-on-mobile show-under-tablet" style="font-size:28px;">
+				<input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+				<nav id="navigation1" class="navigation">
+				  <ul>
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="about.html">About</a></li>
+				    <li><a href="work.html">Work</a></li>
+				  </ul>
+				</nav>
+				</ul>
 			</div><!-- // .container -->
 		</div><!-- // .topbar -->
 
@@ -106,15 +108,16 @@ Work
 					</div><!-- // .desktop-3 -->
 				</a>
 				<!--start -->
-				<a href="#" class="warningImage">
+				<a href="http://www.joytaylorkaufman.com/GREEN_BEAN/" class="permalink">
 					<div class="desktop-6 mobile-half columns">
-						<div class="item">
-							<h2>Former Portfolio Site</h2>
-							<span class="category">HTML | CSS | jQuery</span>
-							<img class="fixWidth safari" src="images/old_portfolio1.png" id="imgSwap" alt="First Portfolio" onclick="runInterference()"/></span>
+						<div class="item first-row">
+						 <h2>Tic Tac Toe</h2>
+							<span class="category">HTML | CSS | JavaScript</span>
+
+							<img class="fixWidth safari" src="images/tic_tac_toe1.png" alt="Tic Tac Toe" />
 						</div><!-- // .item -->
-					</div><!-- // .desktop-3 -->
-				</a>
+				</div><!-- // .desktop-3 -->
+			</a>
 				<!--end -->
 				<div class="clearfix"></div>
 				<br/>
@@ -160,17 +163,6 @@ Work
 					</div><!-- // .item -->
 				</div><!-- // .desktop-3 -->
 			</a><div class="clearfix"></div>
-			<a href="http://www.joytaylorkaufman.com/GREEN_BEAN/" class="permalink">
-				<div class="desktop-6 mobile-half columns">
-					<div class="item first-row">
-					 <h2>Tic Tac Toe</h2>
-						<span class="category">HTML | CSS | JavaScript</span>
-
-						<img class="fixWidth safari" src="images/tic_tac_toe1.png" alt="Tic Tac Toe" />
-					</div><!-- // .item -->
-			</div><!-- // .desktop-3 -->
-		</a>
-
 		</div><!-- // .desktop-3 -->
 	</a><div class="clearfix"></div>
 		</div><!-- // .container -->
