@@ -38,7 +38,7 @@
 
 body {
 	color: #111;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	line-height: 28px;
 	-webkit-font-smoothing: antialiased;
 	/* Fix for webkit rendering */
@@ -1181,7 +1181,7 @@ b, strong { font-weight: bold; }
 /*----------------------------------- about styles ----------------------------*/
 
 p{
-	text-align:left;
+	text-align:justify;
 }
 /* ------------------------------------------------------------------------- IPHONE ----------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------- Larger iPhone ------------------------------------------------------------------------*/
@@ -1510,7 +1510,7 @@ p{
 
 	.desktop-6{
 		width:48%;
-		color:red;
+		/*color:red; */
 	}
 }
 
@@ -1520,7 +1520,7 @@ p{
 
 		.desktop-6{
 			width:48%;
-			color:red;
+		/*	color:red;*/
 		}
 	}
 
@@ -1530,7 +1530,7 @@ p{
 
 			.desktop-6{
 				width:48%;
-				color:red;
+
 			}
 		}
 
@@ -1543,11 +1543,11 @@ p{
 
 				.clearfix .desktop-6{
 					max-width:40% !important;
-					color:red;
+
 				}
 
 			}
-			
+
 /* Accessibility Extras */
 .sr-only {
 	position: absolute;
