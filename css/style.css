@@ -22,8 +22,7 @@
 	4. jQuery Plugins
 		4.1. iosSlider
 		4.2. Flexslider
-	5. Extras
-	 	5.1. Accessibility Extras
+
 
 
 /*--------------------------------------------------------------------------*/
@@ -38,7 +37,7 @@
 
 body {
 	color: #111;
-	/*font-size: 14px;*/
+	font-size: 14px;
 	line-height: 28px;
 	-webkit-font-smoothing: antialiased;
 	/* Fix for webkit rendering */
@@ -1181,7 +1180,7 @@ b, strong { font-weight: bold; }
 /*----------------------------------- about styles ----------------------------*/
 
 p{
-	text-align:justify;
+	text-align:left;
 }
 /* ------------------------------------------------------------------------- IPHONE ----------------------------------------------------------------------------*/
 /* ---------------------------------------------------------------------- Larger iPhone ------------------------------------------------------------------------*/
@@ -1510,7 +1509,7 @@ p{
 
 	.desktop-6{
 		width:48%;
-		/*color:red; */
+		color:red;
 	}
 }
 
@@ -1520,7 +1519,7 @@ p{
 
 		.desktop-6{
 			width:48%;
-		/*	color:red;*/
+			color:red;
 		}
 	}
 
@@ -1530,7 +1529,7 @@ p{
 
 			.desktop-6{
 				width:48%;
-
+				color:red;
 			}
 		}
 
@@ -1543,19 +1542,9 @@ p{
 
 				.clearfix .desktop-6{
 					max-width:40% !important;
-
+					color:red;
 				}
 
 			}
 
-/* Accessibility Extras */
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
-	}
+ }*/
