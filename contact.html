@@ -1,3 +1,4 @@
+<!DOCTYPE html >
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -8,7 +9,7 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title>JTK | Contact</title>
-	<meta name="description" content=".">
+	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
@@ -34,30 +35,23 @@
 	<section id="header">
 		<div class="topbar">
 			<div class="container">
+
 				<!--
 					A custom jQuery plugin called typeMenu handles the menu
 					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
 				-->
 				<ul id="nav" class="full" style="font-size:28px;">
 					<li style="display:flex; justify-content:space-around;">
-						<a href="index.html">
-							Home
-						</a>
+						<a href="index.html">Home</a>
 					</li>
 					<li style="display:flex; justify-content:space-around;">
-						<a href="about.html">
-					 About
-						</a>
+						<a href="about.html">About</a>
 					</li>
 					<li style="display:flex; justify-content:space-around;">
-						<a href="work.html">
-Work
-						</a>
+						<a href="work.html">Work</a>
 					</li>
 					<li style="display:flex; justify-content:space-around;">
-						<a href="contact.html">
-						Contact
-						</a>
+						<a href="contact.html">Contact</a>
 					</li>
 				</ul><!-- // #nav -->
 			</div><!-- // .container -->
@@ -74,66 +68,68 @@ Work
 			</div><!-- // .container -->
 		</div><!-- // .logo-wrap -->
 	</section><!-- // #header -->
+
 	<!-- Contact
 	================================================== -->
 	<section id="contact" class="section page">
 		<div class="container">
 			<div class="desktop-6 tablet-12 columns">
 				<h3 class="border-top">Contact</h3>
-				<form name="contactForm" id="contactForm" method="post" action="">
-					<fieldset>
-						<label for="contactName">Name <span class="required">*</span></label>
-						<input name="contactName" type="text" id="contactName" size="30" value="" />
-						<br />
-						<label for="contactEmail">Email <span class="required">*</span></label>
-						<input name="contactEmail" type="text" id="contactEmail" size="30" value="" />
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+                        <label for="contactName">Name <span class="required">*</span></label>
+                        <input name="contactName" type="text" id="contactName" size="30" value="" />
                         <br />
-						<label for="contactMessage">Message <span class="required">*</span></label>
-						<textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+                        <label for="contactEmail">Email <span class="required">*</span></label>
+                        <input name="contactEmail" type="text" id="contactEmail" size="30" value="" />
                         <br />
-						<label for="contactCaptcha"><strong>10</strong> + <strong>6</strong> = <span class="required">*</span></label>
-						<input name="contactCaptcha" type="text" id="contactCaptcha" size="30" value="" />
-						<input name="contactCaptchaAnswer" type="hidden" id="contactCaptchaAnswer" value="16" />
-						<br/>
-						<label class="placeholder">&nbsp;</label>
-						<input type="submit" class="button full" value="Submit" onclick="runThanksMessage()"/>
-					</fieldset>
-				</form>
-				<div class="clear"></div>
-			</div><!-- // .desktop-6 -->
+                        <label for="contactMessage">Message <span class="required">*</span></label>
+                        <textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+                        <br />
+                        <label for="contactCaptcha"><strong>10</strong> + <strong>6</strong> = <span class="required">*</span></label>
+                        <input name="contactCaptcha" type="text" id="contactCaptcha" size="30" value="" />
+                        <input name="contactCaptchaAnswer" type="hidden" id="contactCaptchaAnswer" value="16" />
+                        <br/>
+                        <label class="placeholder">&nbsp;</label>
+                        <input type="submit" class="button full" value="Submit" onclick="runThanksMessage()"/>
+                    </fieldset>
+                </form>
+                <div class="clear"></div>
+			</div>
 			<div class="desktop-6 tablet-12 nested columns">
 				<div class="desktop-6 tablet-12 columns">
 					<h6 class="border-top">Location</h6>
 					<p>RTP | North Carolina</p>
-					<img src="images/map_images.jpg"/>
-					<div id="map">
-						<div class="box-contact">
-							<h3><span class="underline">Address</span></h3>
-							<p style="color:black;">
-								Raleigh, NC<br />
-								27617<br />
-							</p><br/>
-							<h3 class="font-color-primary"><span class="underline">Email</span></h3>
-							<p>
-								<a href="mailto:jtkaufman737@gmail.com">jtkaufman737@gmail.com</a>
-							</p>
-						</div>
-					</div>
-				</div><!-- // .desktop-6 -->
+                    <img src="images/map_images.jpg"/>
+                    <div id="map">
+                        <div class="box-contact">
+                            <h3><span class="underline">Address</span></h3>
+                            <p style="color:black;">
+                                Raleigh, NC<br />
+                                27617<br />
+                            </p><br/>
+                            <h3 class="font-color-primary"><span class="underline">Email</span></h3>
+                            <p>
+                                <a href="mailto:jtkaufman737@gmail.com">jtkaufman737@gmail.com</a>
+                            </p>
+                        </div>
+                    </div><!-- // #map -->
+				</div>
 				<div class="clear"></div>
 				<div class="desktop-3 tablet-6 mobile-half columns">
-				</div><!-- // .desktop-3 -->
-				<!-- // .desktop-3 -->
-				<div class="clear"></div>
+                </div><!-- // .desktop-3 -->
+                <div class="clear"></div>
 			</div><!-- // .desktop-6 -->
 		</div><!-- // .container -->
 	</section><!-- // section#contact -->
+
+
 	<!-- Footer
 	================================================== -->
 	<section id="footer" class="bumpUp">
 		<div class="container">
 			<div class="desktop-3 columns">
-				<p>Copyright &copy; 2017</a></p>
+				<p>Copyright &copy; 2017</p>
 			</div><!-- // .desktop-3 -->
 
 			<div class="desktop-9 columns">
@@ -146,19 +142,22 @@ Work
 			<div class="clear"></div>
 		</div><!-- // .container -->
 	</section><!-- // section#footer -->
-	<!-- JS
-	================================================== -->
-	<!--
-		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
-		Use jQuery 1.8 until Flexslider 2.2 stable version is released
-	-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-	<script src="js/jQuery.BlackAndWhite.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/less-1.4.0.min.js"></script>
-	<script src="js/jquery.typeMenu.js"></script>
-	<script src="js/jquery.typeSticky.js"></script>
-	<script src="js/jquery.custom.js"></script>
+
+
+<!-- JS
+================================================== -->
+<!--
+	Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
+	Use jQuery 1.8 until Flexslider 2.2 stable version is released
+-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="js/jQuery.BlackAndWhite.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/less-1.4.0.min.js"></script>
+<script src="js/jquery.typeMenu.js"></script>
+<script src="js/jquery.typeSticky.js"></script>
+<script src="js/jquery.custom.js"></script>
+
 <!-- End Document
 ================================================== -->
 <script>
