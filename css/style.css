@@ -1454,7 +1454,7 @@ p{
 
 	body{
 		width:100%;
-		color:red;
+
 	}
 
 	p{
@@ -1509,7 +1509,6 @@ p{
 
 	.desktop-6{
 		width:48%;
-		color:red;
 	}
 }
 
@@ -1519,7 +1518,6 @@ p{
 
 		.desktop-6{
 			width:48%;
-			color:red;
 		}
 	}
 
@@ -1529,7 +1527,6 @@ p{
 
 			.desktop-6{
 				width:48%;
-				color:red;
 			}
 		}
 
@@ -1547,4 +1544,4 @@ p{
 
 			}
 
- }*/
+ }
