@@ -6,7 +6,7 @@
 	-webkit-filter: grayscale(1);
 	visibility:hidden;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .image greyscale :hover {
@@ -22,4 +22,38 @@ filter: grayscale(100%);
 
 #footer ul img{
 	height:50px;
+}
+
+p.left {
+	text-align:left;
+}
+
+@media screen and (max-width: 736px) {
+
+	ul.featured-icons li .icon {
+		width:30px;
+		height:auto;
+	}
+
+	ul.featured-icons li .icon.fab.css3-alt {
+		height:90%;
+	}
+
+	h2.leftOnSmall {
+		text-align:left;
+		margin-top:10px;
+		margin-bottom:15px;
+	}
+
+	#banner .inner {
+		color:white;
+	}
+
+	image.featured img {
+		filter: gray;
+		-webkit-filter: grayscale(0);
+		visibility:hidden;
+		-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(0%);
+	}
 }
